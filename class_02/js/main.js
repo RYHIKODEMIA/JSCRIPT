@@ -168,8 +168,10 @@ else if ( seleccion === 'J' )
 else
    { console.log ('No seleccionó ninguna opción') }
 
-  
-result = ( widht / 9.8 ) * factor
-console.log ('Su peso en ',astro,' es de ',result)
+if ( seleccion != '')
+{
+   result = ( widht / 9.8 ) * factor
+   console.log ('Su peso en ',astro,' es de ',result) 
+}
 
 
