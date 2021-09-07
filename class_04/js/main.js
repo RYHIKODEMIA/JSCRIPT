@@ -16,7 +16,17 @@ let index = 0
 let long = str.length
 let result =""
 
+/*
 while (index < long) {
+    if (index % 2 === 0){
+       result = result + str.charAt(index).toLocaleUpperCase()
+    } else {
+       result = result + str.charAt(index).toLocaleLowerCase()
+    }
+    index ++
+}
+*/
+for (index = 0;index < long; index++) {
     if (index % 2 === 0){
        result = result + str.charAt(index).toLocaleUpperCase()
     } else {
