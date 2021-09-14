@@ -249,8 +249,6 @@ let mentorArray = [
     }
 ]
 
-// Obtener el score promedio de cada materia (HTML, CSS, JS)
-
 let scoreHtml = 0
 let scoreCss  = 0
 let scoreJs   = 0
@@ -274,7 +272,7 @@ mentorArray.forEach((mentor, index)=> {
         }
     })
 
-    promedio = promedio / mentor.scores.length
+    promedio /= mentor.scores.length
 
     let mentorProm   = { name, promedio }
     newMentorScore.push(mentorProm)
@@ -307,16 +305,3 @@ console.log(newStringScore)
 
 console.log("Mentores con promedio mayor a 95")
 console.log(newMentorProm95)
-
-
-/*
-- Obtener el score promedio de cada materia (HTML, CSS, JS)
-
-- Obtener el promedio indivual de cada mentor
-
-- Crear un array de string con la siguiente forma:
-  "Mi nombre es {name} y mi promedio es {promedio}"
-
-- Obtener la lista de mentores cuyo promedio sea mayor a 9.5
-
-*/
