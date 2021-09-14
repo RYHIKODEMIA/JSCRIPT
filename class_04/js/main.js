@@ -227,3 +227,25 @@ for(let contador8 = 1; contador8 <= 10; contador8++ ){
 }
 console.log(result)
 
+console.log("------------RANDOM--------------");
+const arrayKoders = [
+    'leo di caprio',
+    'jon snow',
+    'isabel tudor',
+    'elias y chio'
+  ]
+  
+  const aleatorio = (array) =>{
+    let randomNumber = Math.floor(Math.random() * array.length);
+    return randomNumber
+  }
+  
+  console.log(aleatorio(arrayKoders));
+  
+  const imprimir = (someFuction) =>{
+    let x = arrayKoders[someFuction]
+    return x
+  }
+   console.log(imprimir(aleatorio(arrayKoders)));
+  
+
